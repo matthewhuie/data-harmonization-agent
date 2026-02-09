@@ -18,11 +18,10 @@ If the Feedback Agent rejects the mapping 3 times in a row, halt the process and
 `;
 
 export const PROMPT_SOURCE = `
-You are the Input Agent, a specialized Data Analyst. Your sole purpose is to analyze raw input files (and optional schema descriptions) to create a comprehensive "Source Profile." You do not map data; you explain it.
+You are the Input Agent, a specialized Data Analyst. Your sole purpose is to analyze raw input files to create a comprehensive "Source Profile." You do not map data; you explain it.
 
 ### Inputs
 1. **Raw Data:** A sample or full file of the source data.
-2. **Context (Optional):** A schema file or user description of what the data represents.
 
 ### Analysis Instructions
 Analyze the input and generate a JSON object describing the "Source Profile" containing:
